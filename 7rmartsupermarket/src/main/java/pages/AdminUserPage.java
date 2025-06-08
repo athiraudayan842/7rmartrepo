@@ -17,7 +17,7 @@ public class AdminUserPage {
 	
 	
 	
-@FindBy(xpath="//a[contains(@href,'uniqassosiates.com/admin/list-admin')and @class='small-box-footer']")WebElement moreinfo;
+//@FindBy(xpath="//a[contains(@href,'uniqassosiates.com/admin/list-admin')and @class='small-box-footer']")WebElement moreinfo;
 @FindBy(xpath="//a[@class='btn btn-rounded btn-danger']")WebElement newField;
 @FindBy(xpath="//input[@name='username']")WebElement usernameField;
 @FindBy(xpath="//input[@id='password']")WebElement passwordField;
@@ -26,31 +26,36 @@ public class AdminUserPage {
 @FindBy(xpath="//div[@class='alert alert-danger alert-dismissible']")WebElement alertField;
 
 
-public void moreInfo()
+//public void moreInfo()
+//{
+//moreinfo.click();	
+//}
+public AdminUserPage newMethod()
 {
-moreinfo.click();	
+newField.click();
+return this;	
 }
-public void newMethod()
+public  AdminUserPage enterusername(String usernamevalue)
 {
-newField.click();	
+usernameField.sendKeys(usernamevalue);
+return this;	
 }
-public void enterusername(String usernamevalue)
+public AdminUserPage enterpassword(String passwordvalue)
 {
-usernameField.sendKeys(usernamevalue);	
+passwordField.sendKeys(passwordvalue);
+return this;	
 }
-public void enterpassword(String passwordvalue)
-{
-passwordField.sendKeys(passwordvalue);	
-}
-public void userType()
+public AdminUserPage userType()
 {
 	Select select=new Select(selectField);	
 	select.selectByVisibleText("Admin");
+	return this;
 }
-public void save()
+public AdminUserPage save()
 {
 	
 	saveField.click();
+	return this;
 }
 public boolean isAlertDisplayed()
 {

@@ -5,12 +5,12 @@ import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
 
 import pages.LoginPage;
-import pages.LogoutPage;
+import pages.HomePage;
 
-public class LogoutTest extends Base {
+public class HomePageTest extends Base {
 
 	
-	@Test
+	@Test(description="Verify whether the user is able to logout the home page successfully")
 	public void logoutTest()
 	{
 		String username="admin";
@@ -19,7 +19,7 @@ public class LogoutTest extends Base {
 		loginpage.enterTheUsername(username);
 		loginpage.enterPassword(password);
 		loginpage.clickTheSignInButton();
-		LogoutPage logoutpage=new LogoutPage(driver);
+		HomePage logoutpage=new HomePage(driver);
 		logoutpage.clickAdmin();
 		logoutpage.clickLogout();
 				

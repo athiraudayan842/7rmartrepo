@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-crossbrowsertesting" class="navigator-link">
-              <span class="suite-name border-passed">crossbrowsertesting</span>
+            <a href="#" panel-name="suite-ParallelTesting_methods" class="navigator-link">
+              <span class="suite-name border-failed">ParallelTesting_methods</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-crossbrowsertesting" class="navigator-link ">
-                    <span>C:\Users\Admin\eclipse-workspace\7rmartsupermarket\CrossBrowserTesting.xml</span>
+                  <a href="#" panel-name="test-xml-ParallelTesting_methods" class="navigator-link ">
+                    <span>C:\Users\Admin\git\7rmartrepo\7rmartsupermarket\ParallelTesting_Method.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-crossbrowsertesting" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                  <a href="#" panel-name="testlist-ParallelTesting_methods" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-crossbrowsertesting" class="navigator-link ">
-                    <span>0 groups</span>
+                  <a href="#" panel-name="group-ParallelTesting_methods" class="navigator-link ">
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-crossbrowsertesting" class="navigator-link ">
+                  <a href="#" panel-name="times-ParallelTesting_methods" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-crossbrowsertesting" class="navigator-link ">
+                  <a href="#" panel-name="reporter-ParallelTesting_methods" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-crossbrowsertesting" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-ParallelTesting_methods" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-crossbrowsertesting" class="navigator-link ">
+                  <a href="#" panel-name="chronological-ParallelTesting_methods" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,46 +92,49 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,  1 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-ParallelTesting_methods" class="hide-methods failed suite-ParallelTesting_methods"> (hide)</a> <!-- hide-methods failed suite-ParallelTesting_methods -->
+                      <a href="#" panel-name="suite-ParallelTesting_methods" class="show-methods failed suite-ParallelTesting_methods"> (show)</a> <!-- show-methods failed suite-ParallelTesting_methods -->
+                    </span>
+                    <div class="method-list-content failed suite-ParallelTesting_methods">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTesting_methods" title="testScript.LoginTest" class="method navigator-link" hash-for-method="loginTest1">loginTest1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-ParallelTesting_methods -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-ParallelTesting_methods" class="hide-methods skipped suite-ParallelTesting_methods"> (hide)</a> <!-- hide-methods skipped suite-ParallelTesting_methods -->
+                      <a href="#" panel-name="suite-ParallelTesting_methods" class="show-methods skipped suite-ParallelTesting_methods"> (show)</a> <!-- show-methods skipped suite-ParallelTesting_methods -->
+                    </span>
+                    <div class="method-list-content skipped suite-ParallelTesting_methods">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTesting_methods" title="testScript.LoginTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-ParallelTesting_methods -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-crossbrowsertesting" class="hide-methods passed suite-crossbrowsertesting"> (hide)</a> <!-- hide-methods passed suite-crossbrowsertesting -->
-                      <a href="#" panel-name="suite-crossbrowsertesting" class="show-methods passed suite-crossbrowsertesting"> (show)</a> <!-- show-methods passed suite-crossbrowsertesting -->
+                      <a href="#" panel-name="suite-ParallelTesting_methods" class="hide-methods passed suite-ParallelTesting_methods"> (hide)</a> <!-- hide-methods passed suite-ParallelTesting_methods -->
+                      <a href="#" panel-name="suite-ParallelTesting_methods" class="show-methods passed suite-ParallelTesting_methods"> (show)</a> <!-- show-methods passed suite-ParallelTesting_methods -->
                     </span>
-                    <div class="method-list-content passed suite-crossbrowsertesting">
+                    <div class="method-list-content passed suite-ParallelTesting_methods">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-crossbrowsertesting" title="testScript.ManageNewsTest" class="method navigator-link" hash-for-method="manageNewsTest">manageNewsTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-ParallelTesting_methods" title="testScript.LoginTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-crossbrowsertesting" title="testScript.ManageNewsTest" class="method navigator-link" hash-for-method="manageNewsTest">manageNewsTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-crossbrowsertesting" title="testScript.ManageNewsTest" class="method navigator-link" hash-for-method="manageNewsTest1">manageNewsTest1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-crossbrowsertesting" title="testScript.ManageNewsTest" class="method navigator-link" hash-for-method="manageNewsTest1">manageNewsTest1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-crossbrowsertesting" title="testScript.ManageNewsTest" class="method navigator-link" hash-for-method="manageNewsTest2">manageNewsTest2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-crossbrowsertesting" title="testScript.ManageNewsTest" class="method navigator-link" hash-for-method="manageNewsTest2">manageNewsTest2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-crossbrowsertesting -->
+                    </div> <!-- method-list-content passed suite-ParallelTesting_methods -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -142,223 +145,273 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-crossbrowsertesting" class="panel crossbrowsertesting">
-          <div class="suite-crossbrowsertesting-class-passed">
+        <div panel-name="suite-ParallelTesting_methods" class="panel ParallelTesting_methods">
+          <div class="suite-ParallelTesting_methods-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testScript.ManageNewsTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">testScript.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="manageNewsTest">
-                  </a> <!-- manageNewsTest -->
-                  <span class="method-name">manageNewsTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="manageNewsTest">
-                  </a> <!-- manageNewsTest -->
-                  <span class="method-name">manageNewsTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="manageNewsTest1">
-                  </a> <!-- manageNewsTest1 -->
-                  <span class="method-name">manageNewsTest1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="manageNewsTest1">
-                  </a> <!-- manageNewsTest1 -->
-                  <span class="method-name">manageNewsTest1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="manageNewsTest2">
-                  </a> <!-- manageNewsTest2 -->
-                  <span class="method-name">manageNewsTest2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="manageNewsTest2">
-                  </a> <!-- manageNewsTest2 -->
-                  <span class="method-name">manageNewsTest2</span>
+                  <a name="loginTest1">
+                  </a> <!-- loginTest1 -->
+                  <span class="method-name">loginTest1</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b9fd5ee6caf06c442638322c3e04f6bf, clickElement {id=f.DCA99E3774C32CE93C90BF4330841AC1.d.8CBA6AD0C4B8F13093A5168C0861BE62.e.24}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55299/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b9fd5ee6caf06c442638322c3e04f6bf)] -&gt; xpath: //button[@type=&apos;submit&apos;]]
+Session ID: b9fd5ee6caf06c442638322c3e04f6bf
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at pages.LoginPage.clickTheSignInButton(LoginPage.java:36)
+	at testScript.LoginTest.loginTest1(LoginTest.java:43)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify whether the user is able to login the dashboard with valid username and invalid password successfully)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-crossbrowsertesting-class-passed -->
-        </div> <!-- panel crossbrowsertesting -->
-        <div panel-name="test-xml-crossbrowsertesting" class="panel">
+          </div> <!-- suite-ParallelTesting_methods-class-failed -->
+          <div class="suite-ParallelTesting_methods-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testScript.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[text()=&apos;Dashboard&apos;]&quot;}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b9fd5ee6caf06c442638322c3e04f6bf, findElement {value=//p[text()=&apos;Dashboard&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55299/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b9fd5ee6caf06c442638322c3e04f6bf
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+	at pages.LoginPage.isDashboardDisplay(LoginPage.java:42)
+	at testScript.LoginTest.loginTest(LoginTest.java:27)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify whether the user is able to login the dashboard with valid username and valid password successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParallelTesting_methods-class-skipped -->
+          <div class="suite-ParallelTesting_methods-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testScript.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                  <em>
+(Verify whether the user is able to login the dashboard with valid username and valid password successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParallelTesting_methods-class-passed -->
+        </div> <!-- panel ParallelTesting_methods -->
+        <div panel-name="test-xml-ParallelTesting_methods" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Admin\eclipse-workspace\7rmartsupermarket\CrossBrowserTesting.xml</span>
+            <span class="header-content">C:\Users\Admin\git\7rmartrepo\7rmartsupermarket\ParallelTesting_Method.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;crossbrowsertesting&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Chrome Test&quot;&gt;
+&lt;suite parallel=&quot;methods&quot; name=&quot;ParallelTesting_methods&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;methods&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testScript.ManageNewsTest&quot;/&gt;
+      &lt;class name=&quot;testScript.LoginTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;loginTest&quot;/&gt;
+          &lt;include name=&quot;loginTest1&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testScript.LoginTest --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Chrome Test --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Edge Test&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;testScript.ManageNewsTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Edge Test --&gt;
-&lt;/suite&gt; &lt;!-- crossbrowsertesting --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- ParallelTesting_methods --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-crossbrowsertesting" class="panel">
+        <div panel-name="testlist-ParallelTesting_methods" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for crossbrowsertesting</span>
+            <span class="header-content">Tests for ParallelTesting_methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Chrome Test (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Edge Test (1 class)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-crossbrowsertesting" class="panel">
+        <div panel-name="group-ParallelTesting_methods" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for crossbrowsertesting</span>
+            <span class="header-content">Groups for ParallelTesting_methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-crossbrowsertesting" class="panel">
+        <div panel-name="times-ParallelTesting_methods" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for crossbrowsertesting</span>
+            <span class="header-content">Times for ParallelTesting_methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_crossbrowsertesting');
-function tableData_crossbrowsertesting() {
+suiteTableInitFunctions.push('tableData_ParallelTesting_methods');
+function tableData_ParallelTesting_methods() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'manageNewsTest')
-data.setCell(0, 2, 'testScript.ManageNewsTest')
-data.setCell(0, 3, 4485);
+data.setCell(0, 1, 'loginTest')
+data.setCell(0, 2, 'testScript.LoginTest')
+data.setCell(0, 3, 11129);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'manageNewsTest')
-data.setCell(1, 2, 'testScript.ManageNewsTest')
-data.setCell(1, 3, 3365);
+data.setCell(1, 1, 'loginTest')
+data.setCell(1, 2, 'testScript.LoginTest')
+data.setCell(1, 3, 2079);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'manageNewsTest2')
-data.setCell(2, 2, 'testScript.ManageNewsTest')
-data.setCell(2, 3, 3345);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'manageNewsTest2')
-data.setCell(3, 2, 'testScript.ManageNewsTest')
-data.setCell(3, 3, 2909);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'manageNewsTest1')
-data.setCell(4, 2, 'testScript.ManageNewsTest')
-data.setCell(4, 3, 2484);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'manageNewsTest1')
-data.setCell(5, 2, 'testScript.ManageNewsTest')
-data.setCell(5, 3, 2349);
-window.suiteTableData['crossbrowsertesting']= { tableData: data, tableDiv: 'times-div-crossbrowsertesting'}
+data.setCell(2, 1, 'loginTest1')
+data.setCell(2, 2, 'testScript.LoginTest')
+data.setCell(2, 3, 1095);
+window.suiteTableData['ParallelTesting_methods']= { tableData: data, tableDiv: 'times-div-ParallelTesting_methods'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 seconds</span>
-              <div id="times-div-crossbrowsertesting">
-              </div> <!-- times-div-crossbrowsertesting -->
+              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <div id="times-div-ParallelTesting_methods">
+              </div> <!-- times-div-ParallelTesting_methods -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-crossbrowsertesting" class="panel">
+        <div panel-name="reporter-ParallelTesting_methods" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for crossbrowsertesting</span>
+            <span class="header-content">Reporter output for ParallelTesting_methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-crossbrowsertesting" class="panel">
+        <div panel-name="ignored-methods-ParallelTesting_methods" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testScript.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">loginTest3</span>
+                <br/>
+                <span class="ignored-method-name">loginTest2</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-crossbrowsertesting" class="panel">
+        <div panel-name="chronological-ParallelTesting_methods" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testScript.ManageNewsTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testScript.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">browserIntialization(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">manageNewsTest</span>
-                <span class="method-start">4080 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">browserIntialization(chrome)</span>
-                <span class="method-start">7454 ms</span>
+                <span class="method-start">2 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">manageNewsTest1</span>
-                <span class="method-start">10868 ms</span>
+                <span class="method-name">loginTest</span>
+                <span class="method-start">7010 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTest1</span>
+                <span class="method-start">7024 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=loginTest1 status=FAILURE method=LoginTest.loginTest1()[pri:0, instance:testScript....)</span>
+                <span class="method-start">8146 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=loginTest status=SKIP method=LoginTest.loginTest()[pri:0, instance:testScript.Login...)</span>
+                <span class="method-start">18174 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserIntialization(chrome)</span>
-                <span class="method-start">13227 ms</span>
+                <span class="method-start">18179 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">manageNewsTest2</span>
-                <span class="method-start">17099 ms</span>
+                <span class="method-name">loginTest</span>
+                <span class="method-start">24245 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">browserIntialization(edge)</span>
-                <span class="method-start">20160 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">manageNewsTest</span>
-                <span class="method-start">26333 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">browserIntialization(edge)</span>
-                <span class="method-start">30821 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">manageNewsTest1</span>
-                <span class="method-start">37576 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">browserIntialization(edge)</span>
-                <span class="method-start">40073 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">manageNewsTest2</span>
-                <span class="method-start">46529 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=loginTest status=SUCCESS method=LoginTest.loginTest()[pri:0, instance:testScript.Lo...)</span>
+                <span class="method-start">26327 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

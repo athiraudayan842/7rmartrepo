@@ -19,23 +19,29 @@ public class LoginPage {
 	@FindBy(xpath="//p[text()='Dashboard']")WebElement dashboardField;
 @FindBy(xpath="//div[@class='alert alert-danger alert-dismissible']")WebElement alert;
 
-public void enterTheUsername(String usernamevalue)
+public LoginPage enterTheUsername(String usernamevalue)
 {
-usernameField.sendKeys(usernamevalue);	
+usernameField.sendKeys(usernamevalue);
+return this;	
 }
-public void enterPassword(String passwordvalue)
+
+public LoginPage enterPassword(String passwordvalue)
 {
-passwordField.sendKeys(passwordvalue);	
+passwordField.sendKeys(passwordvalue);
+return this;	
 }
 	
-public void clickTheSignInButton()
+public HomePage clickTheSignInButton()
 {
 	signField.click();
+	return new HomePage(driver);
 }
+
 public boolean isDashboardDisplay()
 {
 return dashboardField.isDisplayed();	
 }
+
 public boolean isAlertDisplayed()
 {
 	return alert.isDisplayed();

@@ -5,12 +5,13 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constant;
 import pages.LoginPage;
 import utilities.ExcelUtility;
 
 public class LoginTest  extends Base{
 
-	@Test(groups= {"regression"}, retryAnalyzer=retry.Retry.class)
+	@Test(groups= {"regression"}, description="Verify whether the user is able to login the dashboard with valid username and valid password successfully", retryAnalyzer=retry.Retry.class)
 	
 public void loginTest() throws IOException
 	{
@@ -24,13 +25,13 @@ public void loginTest() throws IOException
 	loginpage.enterPassword(password);
 	loginpage.clickTheSignInButton();
 	boolean ishomepageavailable=loginpage.isDashboardDisplay();
-	Assert.assertTrue(ishomepageavailable);
+	Assert.assertTrue(ishomepageavailable,Constant.LOGINCORRECTUSERNAMECORRECTPASSWORD);
 	
 	
 	
 		
 	}
-	@Test
+	@Test(description="Verify whether the user is able to login the dashboard with valid username and invalid password successfully")
 	public void loginTest1()
 	{
 	
@@ -41,10 +42,10 @@ public void loginTest() throws IOException
 	loginpage.enterPassword(password);
 	loginpage.clickTheSignInButton();
 	boolean isalertavailable=loginpage.isAlertDisplayed();
-	Assert.assertTrue(isalertavailable);
+	Assert.assertTrue(isalertavailable,Constant.LOGINCORRECTUSERNAMEWRONGPASSWORD);
 	
 	}
-	@Test
+	@Test(description="Verify whether the user is able to login the dashboard with invalid username and valid password successfully")
 	public void loginTest2()
 	{
 	
@@ -55,10 +56,10 @@ public void loginTest() throws IOException
 	loginpage.enterPassword(password);
 	loginpage.clickTheSignInButton();
 	boolean isalertavailable=loginpage.isAlertDisplayed();
-	Assert.assertTrue(isalertavailable);
+	Assert.assertTrue(isalertavailable,Constant.LOGINWRONGUSERNAMCORRECTPASSWORD);
 	
 	}
-@Test
+@Test(description="Verify whether the user is able to login the dashboard with invalid username and invalid password successfully")
 	public void loginTest3()
 	{
 	
@@ -69,7 +70,7 @@ public void loginTest() throws IOException
 	loginpage.enterPassword(password);
 	loginpage.clickTheSignInButton();
 	boolean isalertavailable=loginpage.isAlertDisplayed();
-	Assert.assertTrue(isalertavailable);
+	Assert.assertTrue(isalertavailable,Constant.LOGINWRONGUSERNAMEWRONGPASSWORD);
 	
 	}
 }

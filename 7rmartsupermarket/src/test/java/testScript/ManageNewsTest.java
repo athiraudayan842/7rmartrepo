@@ -3,62 +3,73 @@ package testScript;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constant;
+import pages.HomePage;
 import pages.LoginPage;
 import pages.ManageNewsPage;
 
 public class ManageNewsTest extends Base{
+	ManageNewsPage managenewspage;
+	HomePage homepage;
 
-@Test
+@Test(description="Verify whether the user is able to add the new news  in the Manage News page successfully")
 public void manageNewsTest()
 {
 	String username="admin";
 	String password="admin";
-	
-	LoginPage loginpage=new LoginPage(driver);
-	loginpage.enterTheUsername(username);
-	loginpage.enterPassword(password);
-	loginpage.clickTheSignInButton();
-	
-	ManageNewsPage manage=new ManageNewsPage(driver);
 	String news="Have a nice day";
-	manage.moreInfo();
-	manage.newMethod();
-	manage.textFieldMethod(news);
-	manage.save();
-	boolean isalertavailable=manage.isAlertDisplayed();
-	Assert.assertTrue(isalertavailable);
+	LoginPage loginpage=new LoginPage(driver);
+	loginpage.enterTheUsername(username).enterPassword(password);
+	//loginpage.enterPassword(password);
+	homepage=loginpage.clickTheSignInButton();
+	
+	//ManageNewsPage manage=new ManageNewsPage(driver);
+	managenewspage=homepage.moreInfoManageNews();
+	managenewspage.newMethod().textFieldMethod(news).save();
+	
+	//manage.moreInfo();
+	//manage.newMethod();
+	//manage.textFieldMethod(news);
+	//manage.save();
+	boolean isalertavailable=managenewspage.isAlertDisplayed();
+	Assert.assertTrue(isalertavailable,Constant.ADDNEWSERROR);
 	
 }
 	
-@Test
+@Test(description="Verify whether the user is able to display the save button in the Manage News page successfully")
 public void manageNewsTest1()
 {
 	String username="admin";
 	String password="admin";
 	
 	LoginPage loginpage=new LoginPage(driver);
-	loginpage.enterTheUsername(username);
-	loginpage.enterPassword(password);
-	loginpage.clickTheSignInButton();	
+	loginpage.enterTheUsername(username).enterPassword(password);
+	//loginpage.enterPassword(password);
+	homepage=loginpage.clickTheSignInButton();	
 	
-	ManageNewsPage manage=new ManageNewsPage(driver);
-	manage.moreInfo();
-	manage.newMethod();
-	manage.isSaveButtonDisplayed();
+	//ManageNewsPage manage=new ManageNewsPage(driver);
+	managenewspage=homepage.moreInfoManageNews();
+	managenewspage.newMethod().isSaveButtonDisplayed();
+	//manage.moreInfo();
+	//manage.newMethod();
+	//manage.isSaveButtonDisplayed();
 }
-@Test
+@Test(description="Verify whether the user is able to delete the news in the Manage News page successfully")
 public void manageNewsTest2()
 {
 	String username="admin";
 	String password="admin";
 	
 	LoginPage loginpage=new LoginPage(driver);
-	loginpage.enterTheUsername(username);
-	loginpage.enterPassword(password);
-	loginpage.clickTheSignInButton();	
-	ManageNewsPage manage=new ManageNewsPage(driver);
-	manage.moreInfo();
-	manage.deleteMethod();
-	manage.deleteAlert();
+	loginpage.enterTheUsername(username).enterPassword(password);
+	//loginpage.enterPassword(password);
+	homepage=loginpage.clickTheSignInButton();
+	
+	//ManageNewsPage manage=new ManageNewsPage(driver);
+	managenewspage=homepage.moreInfoManageNews();
+	managenewspage.deleteMethod().deleteAlert();
+	//manage.moreInfo();
+	//manage.deleteMethod();
+	//manage.deleteAlert();
 }
 }

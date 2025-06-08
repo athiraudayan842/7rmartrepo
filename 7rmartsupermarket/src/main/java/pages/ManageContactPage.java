@@ -19,7 +19,7 @@ public class ManageContactPage {
 			PageFactory.initElements(driver, this);	
 		}
 	
-	@FindBy(xpath="//a[contains(@href,'uniqassosiates.com/admin/list-contact')]")WebElement moreinfo;
+	//@FindBy(xpath="//a[contains(@href,'uniqassosiates.com/admin/list-contact')]")WebElement moreinfo;
 	
     @FindBy(xpath="//a[@role='button']")WebElement editField;
     
@@ -37,55 +37,60 @@ public class ManageContactPage {
     
     @FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement alert;
     
-    
+
    
     
-	public void moreInfo()
-    {
-    	moreinfo.click();
-    }
+	//public void moreInfo()
+    //{
+    	//moreinfo.click();
+    //}
 
-    public void editMethod()
+    public ManageContactPage editMethod()
     {
-    editField.click();	
+    editField.click();
+	return this;	
     }
-    public void phoneFieldMethod(String num)
+    public ManageContactPage phoneFieldMethod(String num)
     {
     	phoneField.clear();
-    phoneField.sendKeys(num);	
+    phoneField.sendKeys(num);
+	return this;	
     }
 
-    public void emailFieldMethod(String email)
+    public ManageContactPage emailFieldMethod(String email)
     {
     	emailField.clear();
     	emailField.sendKeys(email);
+		return this;
     }
-    public void addressMethod(String address)
+    public ManageContactPage addressMethod(String address)
     {
     	addressField.clear();
     	addressField.sendKeys(address);
+		return this;
     }
-    public void deliveryTimeMethod(String deliverytime)
+    public ManageContactPage deliveryTimeMethod(String deliverytime)
     {
     	deliverytimeField.clear();
     	deliverytimeField.sendKeys(deliverytime);
+		return this;
     }
-    public void deliveryChargeTime(String deliverychargelimit)
+    public ManageContactPage deliveryChargeTime(String deliverychargelimit)
     {
     	deliverychargelimitField.clear();
-    	deliverychargelimitField.sendKeys(deliverychargelimit);	
+    	deliverychargelimitField.sendKeys(deliverychargelimit);
+		return this;	
     }
-   public void updateMethod()
+   public ManageContactPage updateMethod()
    {
 	   //WebDriverWait wait =new WebDriverWait(driver,Duration.ofSeconds(5));
 		//wait.until(ExpectedConditions.elementToBeClickable(update));//explicit wait 
 	   Actions actions=new Actions(driver);//action class
 	   actions.click(update).build().perform();
 	//update.click();   
+	return this;
    }
-    
-    
-    public boolean alert()
+    public boolean isAlertDisplayed()
     {
     	return alert.isDisplayed();
 

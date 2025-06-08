@@ -12,7 +12,7 @@ public class ManageFooterPage {
 			PageFactory.initElements(driver, this);	
 	}	
 	
-@FindBy(xpath="//a[contains(@href,'uniqassosiates.com/admin/list-footertext')]")WebElement moreinfo;	
+//@FindBy(xpath="//a[contains(@href,'uniqassosiates.com/admin/list-footertext')]")WebElement moreinfo;	
 @FindBy(xpath="//a[contains(@href,'.uniqassosiates.com/admin/Footertext/edit?edit=1')]")WebElement edit;		
 @FindBy(xpath="//textarea[@id='content']")WebElement addressField;
 @FindBy(xpath="//input[@name='email']")WebElement emailField;
@@ -21,34 +21,39 @@ public class ManageFooterPage {
 @FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement alert;
 
 
-public void moreInfo()
-{
-	moreinfo.click();
-}
-public void edit()
+//public void moreInfo()
+//{
+	//moreinfo.click();
+//}
+public ManageFooterPage edit()
 {
 	edit.click();
+	return this;
 }
 
-public void addressMethod(String address)
+public ManageFooterPage addressMethod(String address)
 {
 	addressField.clear();
 	addressField.sendKeys(address);
+	return this;
 
 }
-public void emailFieldMethod(String email)
+public ManageFooterPage emailFieldMethod(String email)
 {
 	emailField.clear();
 	emailField.sendKeys(email);
+	return this;
 }
-public void phoneFieldMethod(String num)
+public ManageFooterPage phoneFieldMethod(String num)
 {
 	phoneField.clear();
-phoneField.sendKeys(num);	
+phoneField.sendKeys(num);
+return this;	
 }
-public void updateMethod()
+public ManageFooterPage updateMethod()
 {
-update.click();	
+update.click();
+return this;	
 }
 public boolean alert()
 {
@@ -56,7 +61,7 @@ public boolean alert()
 
 }
 
-public void isUpadateButtonDisplayed()
+public ManageFooterPage isUpadateButtonDisplayed()
 {
 	if(update.isDisplayed()) {
 		System.out.println("update button is displayed");
@@ -65,6 +70,7 @@ public void isUpadateButtonDisplayed()
 	{
 		System.out.println("update button is not displayed");	
 	}
+	return this;
 
 }
 }

@@ -14,14 +14,7 @@ public ManageNewsPage(WebDriver driver) {
 }
 
 
-//@FindBy(xpath="//a[contains(@href,'uniqassosiates.com/admin/list-news')]")WebElement moreinfo;
-//@FindBy(xpath="//a[@class='btn btn-rounded btn-danger']")WebElement newField;
-//@FindBy(xpath="//textarea[@id='news']")WebElement textField;
-//@FindBy(xpath="//button[@type='submit']")WebElement saveField;
-//@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement alertField;
-//@FindBy(xpath="//a[contains(@href,'.com/admin/news/delete?del=5393&page_ad=1')]")WebElement delete;
-
-@FindBy(xpath="//a[contains(@href,'niqassosiates.com/admin/list-news')]")WebElement moreinfo;
+//@FindBy(xpath="//a[contains(@href,'niqassosiates.com/admin/list-news')]")WebElement moreinfo;
 
 @FindBy(xpath="//a[@onclick='click_button(1)']")WebElement newField;
 
@@ -35,23 +28,27 @@ public ManageNewsPage(WebDriver driver) {
 
 @FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement deletealert;
 
-public void moreInfo()
+
+//public void moreInfo()
+//{
+	//moreinfo.click();
+//}
+
+public ManageNewsPage newMethod()
 {
-	moreinfo.click();
+newField.click();
+return this;	
+}
+public ManageNewsPage textFieldMethod(String news)
+{
+textField.sendKeys(news);
+return this;	
 }
 
-public void newMethod()
-{
-newField.click();	
-}
-public void textFieldMethod(String text)
-{
-textField.sendKeys(text);	
-}
-
-public void save()
+public ManageNewsPage save()
 {
 	saveField.click();
+	return this;
 }
 public boolean isAlertDisplayed()
 {
@@ -59,7 +56,7 @@ public boolean isAlertDisplayed()
 
 }
 
-public void isSaveButtonDisplayed()
+public ManageNewsPage isSaveButtonDisplayed()
 {
 	if(saveField.isDisplayed()) {
 		System.out.println("save button is displayed");
@@ -68,10 +65,12 @@ public void isSaveButtonDisplayed()
 	{
 		System.out.println("save button is not displayed");	
 	}
+	return this;
 }
-public void deleteMethod()
+public ManageNewsPage deleteMethod()
 {
-delete.click();	
+delete.click();
+return this;	
 }
 public boolean deleteAlert()
 {

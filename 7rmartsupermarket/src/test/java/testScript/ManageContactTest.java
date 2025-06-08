@@ -3,12 +3,16 @@ package testScript;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constant;
 import pages.AdminUserPage;
+import pages.HomePage;
 import pages.LoginPage;
 import pages.ManageContactPage;
 
 public class ManageContactTest extends Base {
-@Test
+	ManageContactPage managecontactpage;
+	HomePage homepage;
+@Test(description="Verify whether the user is able to add the contact us  in the Manage Contact page successfully")
 	public void mangeContactTest()
 	{
 		String username="admin";
@@ -20,23 +24,25 @@ public class ManageContactTest extends Base {
 		String deliverychargelimit="10";
 		
 		LoginPage loginpage=new LoginPage(driver);
-		loginpage.enterTheUsername(username);
-		loginpage.enterPassword(password);
-		loginpage.clickTheSignInButton();	
+		loginpage.enterTheUsername(username).enterPassword(password);
+		//loginpage.enterPassword(password);
+		homepage=loginpage.clickTheSignInButton();	
 	
-		ManageContactPage contact=new ManageContactPage(driver);
+		//ManageContactPage contact=new ManageContactPage(driver);
 		
-	contact.moreInfo();
-	contact.editMethod();
-	contact.phoneFieldMethod(num);
-	contact.emailFieldMethod(email);
-	contact.addressMethod(address);
-	contact.deliveryTimeMethod(deliverytime);
-	contact.deliveryChargeTime(deliverychargelimit);
-	contact.updateMethod();
-	contact.alert();
-	boolean isalertavailable=contact.alert();
-	Assert.assertTrue(isalertavailable);
+	//contact.moreInfo();
+		managecontactpage=homepage.moreInfoManageContact();
+		managecontactpage.editMethod().phoneFieldMethod(num).emailFieldMethod(email).addressMethod(address).deliveryTimeMethod(deliverytime).deliveryChargeTime(deliverychargelimit).updateMethod().isAlertDisplayed();
+	//contact.editMethod();
+	//contact.phoneFieldMethod(num);
+	//contact.emailFieldMethod(email);
+	//contact.addressMethod(address);
+	//contact.deliveryTimeMethod(deliverytime);
+	//contact.deliveryChargeTime(deliverychargelimit);
+	//contact.updateMethod();
+	//contact.alert();
+	boolean isalertavailable=managecontactpage.isAlertDisplayed();
+	Assert.assertTrue(isalertavailable,Constant.ADDMANAGECONTACTERRORR);
 	}	
 		
 }	

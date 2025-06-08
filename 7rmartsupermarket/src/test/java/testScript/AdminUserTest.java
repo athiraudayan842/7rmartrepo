@@ -1,14 +1,19 @@
+
 package testScript;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constant;
 import pages.AdminUserPage;
+import pages.HomePage;
 import pages.LoginPage;
 import utilities.FakerUtility;
 
 public class AdminUserTest extends Base {
-@Test(groups= {"regression"}, retryAnalyzer=retry.Retry.class)
+	AdminUserPage adminuserpage;
+	HomePage homepage;
+@Test(groups= {"regression"}, description="Verify whether the useris able to add  the new admin users information in the admin users page successfully", retryAnalyzer=retry.Retry.class)
 public void adminUserTest ()
 {
 	String username="admin";
@@ -16,23 +21,25 @@ public void adminUserTest ()
 	//String user ="adm";
 	//String pass="adm12";
 	LoginPage loginpage=new LoginPage(driver);
-	loginpage.enterTheUsername(username);
-	loginpage.enterPassword(password);
-	loginpage.clickTheSignInButton();
+	loginpage.enterTheUsername(username).enterPassword(password);
+	//loginpage.enterPassword(password);
+	homepage=loginpage.clickTheSignInButton();
 	
 	FakerUtility faker=new FakerUtility();
 	String user=faker.creatARandomFirstName();
 	String pass=faker.creatARandomFirstName();
 			
-	AdminUserPage admin=new AdminUserPage(driver);
-	admin.moreInfo();
-	admin.newMethod();
-	admin.enterusername(user);
-	admin.enterpassword(pass);
-	admin.userType();
-	admin.save();
-	boolean isalertavailable=admin.isAlertDisplayed();
-	Assert.assertTrue(isalertavailable);
+	//AdminUserPage admin=new AdminUserPage(driver);
+	adminuserpage=homepage.moreInfoAdminUser();
+	adminuserpage.newMethod().enterusername(username).enterpassword(password).userType().save();
+	//admin.moreInfo();
+	//admin.newMethod();
+	//admin.enterusername(user);
+	//admin.enterpassword(pass);
+	//admin.userType();
+	//admin.save();
+	boolean isalertavailable=adminuserpage.isAlertDisplayed();
+	Assert.assertTrue(isalertavailable,Constant.ADMINUSERSERROR);
 
 }
 	

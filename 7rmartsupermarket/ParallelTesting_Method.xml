@@ -10,8 +10,8 @@
     
        <class name="testScript.LoginTest">
      <methods>
-     <include name="loginTest"></include>
-         <include name="loginTest1"></include>
+     <include name="loginTest"/>
+         <include name="loginTest1"/>
          
      </methods>
      </class> 
