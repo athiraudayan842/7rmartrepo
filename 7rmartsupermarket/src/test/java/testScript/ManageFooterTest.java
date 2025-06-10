@@ -74,6 +74,8 @@ public class ManageFooterTest extends Base{
 		//footer.moreInfo();
 		//footer.edit();
 		//footer.isUpadateButtonDisplayed();
+		boolean issavedisplayed=managefooterpage.isSaveAlertDisplay();
+		Assert.assertTrue(issavedisplayed,Constant.DISPLAYUPDATEBUTTONERROR);
 			
 	}
 	

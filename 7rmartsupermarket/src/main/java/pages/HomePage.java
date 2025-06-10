@@ -63,4 +63,8 @@ public class HomePage {
 
 		logoutField.click();
 	}
+	public boolean isLogoutDisplay()
+	{
+	return logoutField.isDisplayed();
+			}
 }

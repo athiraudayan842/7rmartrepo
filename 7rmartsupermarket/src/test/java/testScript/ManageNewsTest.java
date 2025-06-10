@@ -60,6 +60,8 @@ public class ManageNewsTest extends Base {
 		// ManageNewsPage manage=new ManageNewsPage(driver);
 		managenewspage = homepage.moreInfoManageNews();
 		managenewspage.newMethod().isSaveButtonDisplayed();
+		boolean issavedisplayed=managenewspage.isSaveAlertDisplay();
+		Assert.assertTrue(issavedisplayed,Constant.DISPLAYSAVEBUTTONERROR);
 		// manage.moreInfo();
 		// manage.newMethod();
 		// manage.isSaveButtonDisplayed();
@@ -83,5 +85,7 @@ public class ManageNewsTest extends Base {
 		// manage.moreInfo();
 		// manage.deleteMethod();
 		// manage.deleteAlert();
+		boolean isDeleteAlertDisplay=managenewspage.isDeleteAlertDisplay();
+		Assert.assertTrue(isDeleteAlertDisplay,Constant.DELETENEWSERROR);
 	}
 }

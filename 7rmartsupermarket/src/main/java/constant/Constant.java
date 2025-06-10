@@ -9,7 +9,7 @@ public class Constant {
 
 	public static final String LOGINWRONGUSERNAMCORRECTPASSWORD = "Homepage is displayed with wrong username and correct password";
 	public static final String LOGINWRONGUSERNAMEWRONGPASSWORD = "Homepage is displayed with wrong username and wrong password";
-
+	public static final String LOGOUTERROR="Homepage is not display after Logout";
 	public static final String ADMINUSERSERROR = "Error in adding new information to the adminuser page";
 
 	public static final String ADDMANAGECATECORYERROR = "Error in adding new information to the managecategory page";

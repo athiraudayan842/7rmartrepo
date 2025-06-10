@@ -67,15 +67,27 @@ public class ManageNewsPage {
 		}
 		return this;
 	}
+	
 
 	public ManageNewsPage deleteMethod() {
 		delete.click();
 		return this;
 	}
 
+
 	public boolean deleteAlert() {
 
 		driver.switchTo().alert().accept();
 		return deletealert.isDisplayed();
 	}
+	public boolean isDeleteAlertDisplay()
+	{
+	return deletealert.isDisplayed();
+			}
+	
+	public boolean isSaveAlertDisplay()
+	{
+	return saveField.isDisplayed();
+			}
+	
 }

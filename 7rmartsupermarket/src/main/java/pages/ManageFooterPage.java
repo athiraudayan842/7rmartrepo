@@ -74,4 +74,8 @@ public class ManageFooterPage {
 		return this;
 
 	}
+	public boolean isSaveAlertDisplay()
+	{
+	return update.isDisplayed();
+			}
 }
